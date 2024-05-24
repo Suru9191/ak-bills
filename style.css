@@ -1,0 +1,48 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+.invoice{
+    color: blue;
+
+}
+
+
+.invoice-details {
+    display: grid;
+    grid-template-columns: 150px 1fr; /* Define two columns: 150px for labels and 1fr (remaining space) for inputs */
+    gap: 10px; /* Add gap between grid items */
+}
+.invoice-details label {
+    font-weight: bold;
+}
+.invoice-details input {
+    width: 100%; /* Take up full width of their container */
+    padding: 8px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+.invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.invoice-table th, .invoice-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.invoice-table th {
+    background-color: #f2f2f2;
+}
+
+.total {
+    margin-top: 20px;
+}
+
+.total p {
+    text-align: right;
+}
+
+
